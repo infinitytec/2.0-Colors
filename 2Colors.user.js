@@ -5,7 +5,7 @@
 // @author       You
 // @match        https://scratch.mit.edu/projects/*
 // @grant        GM_addStyle
-// @updateURL    
+// @updateURL    https://github.com/infinitytec/2.0-Colors/raw/master/2Colors.user.js
 // ==/UserScript==
 
 (function() {
