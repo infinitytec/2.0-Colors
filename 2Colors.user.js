@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         2.0 Colors
-// @version      0.2
+// @version      0.9
 // @description  Adding 2.0 block colors to Scratch 3.0. Made by infinitytec in 2018. Under the MIT license.
 // @author       You
 // @match        https://scratch.mit.edu/projects/*
@@ -17,9 +17,9 @@
     //Looks
     GM_addStyle("g[data-category=looks] > path.blocklyBlockBackground{fill:#8a55d7;}.blocklyDropDownDiv[data-category=looks]{background:#8a55d7 !important;}");
     //Sound & Music
-    GM_addStyle("g[data-category=sounds] > path.blocklyBlockBackground,g[data-category=Music] > path.blocklyBlockBackground{fill:#bb42c3; stroke:#bb42c3;}.blocklyDropDownDiv[data-category=sounds], .blocklyDropDownDiv[data-category=Music]{background:#bb42c3 !important;}");
+    GM_addStyle("g[data-category=sounds] > path.blocklyBlockBackground,g[data-category=Music] > path.blocklyBlockBackground{fill:#bb42c3; stroke:#99489e;}.blocklyDropDownDiv[data-category=sounds], .blocklyDropDownDiv[data-category=Music]{background:#bb42c3 !important;} line[stroke='#0DA57A'] {stroke: white !important;} path[stroke='#0B8E69']{stroke: #99489e !important;}");
     //Events
-    GM_addStyle("g[data-category=events] > path.blocklyBlockBackground, .blocklyPath[fill='#FFBF00']{fill:#c88330;}.blocklyDropDownDiv[data-category=events], .blocklyPath[fill='#FFBF00'].blocklyDropDownDiv[data-category=events]{background:#c88330 !important;}");
+    GM_addStyle("g[data-category=events] > path.blocklyBlockBackground, .blocklyPath[fill='#FFBF00']{fill:#c88330;}.blocklyDropDownDiv[data-category=events], .blocklyPath[fill='#FFBF00'].blocklyDropDownDiv[data-category=events],.blocklyDropDownDiv[data-category=null]{background:#c88330 !important;}");
     //Control
     GM_addStyle("g[data-category=control] > path.blocklyBlockBackground{fill:#e1a91a;}.blocklyDropDownDiv[data-category=control]{background:#e1a91a !important;}");
     //Sensing
@@ -33,7 +33,16 @@
     //Lists
     GM_addStyle("g[data-category=data-lists] > path.blocklyBlockBackground{fill:#d36518;}.blocklyDropDownDiv[data-category=data-lists]{background:#d36518 !important;}");
     //Text Inputs
-    GM_addStyle("g[data-shapes='argument round'] path.blocklyBlockBackground{fill: white;stroke: #55555555 !important;}");
+    GM_addStyle("g[data-shapes='argument round']path.blocklyBlockBackground, path[fill='#ffffff']{fill: white; stroke-width: 1px;}");
     //Make dropdowns stand out
-    GM_addStyle("g[data-argument-type='dropdown'] path.blocklyBlockBackground, g[data-argument-type='variable'] path.blocklyBlockBackground, rect.blocklyBlockBackground{fill: #55555555;}.blocklyPath, g.blocklyDraggable > line{stroke: #55555555 !important;}");
+    GM_addStyle("g[data-argument-type='dropdown'] path.blocklyBlockBackground, g[data-argument-type='variable'] path.blocklyBlockBackground, rect.blocklyBlockBackground{fill: #55555555;}");
+    //Make color previews continue to work
+    GM_addStyle("g[data-argument-type='colour']path.blocklyBlockBackground (fill: initial;)");
+    //Make category colors match the block colors
+    GM_addStyle("");
+    GM_addStyle("");
+    GM_addStyle("");
+    GM_addStyle("");
+    GM_addStyle("");
+    GM_addStyle("");
 })();
