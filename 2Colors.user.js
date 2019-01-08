@@ -17,7 +17,7 @@
     //Looks
     GM_addStyle("g[data-category=looks] > path.blocklyBlockBackground{fill:#8a55d7;}.blocklyDropDownDiv[data-category=looks]{background:#8a55d7 !important;}");
     //Sound & Music
-    GM_addStyle("g[data-category=sounds] > path.blocklyBlockBackground,g[data-category=Music] > path.blocklyBlockBackground{fill:#bb42c3; stroke:#99489e;}.blocklyDropDownDiv[data-category=sounds], .blocklyDropDownDiv[data-category=Music]{background:#bb42c3 !important; border-color: #99489e !important;} line[stroke='#0DA57A'] {stroke: white !important;} path[stroke='#0B8E69']:not(g[data-category='Pen'] > path.blocklyBlockBackground){stroke: #99489e !important;}");
+    GM_addStyle("g[data-category=sounds] > path.blocklyBlockBackground,g[data-category=Music] > path.blocklyBlockBackground{fill:#bb42c3; stroke:#99489e;}path.blocklyPath{stroke:#99489e}.blocklyDropDownDiv[data-category=sounds], .blocklyDropDownDiv[data-category=Music]{background:#bb42c3 !important; border-color: #99489e !important;} line[stroke='#0DA57A'] {stroke: white !important;} path[stroke='#0B8E69']:not(g[data-category='Pen'] > path.blocklyBlockBackground){stroke: #99489e !important;}");
     //Events
     GM_addStyle("g[data-category=events] > path.blocklyBlockBackground, .blocklyPath[fill='#FFBF00']{fill:#c88330;}.blocklyDropDownDiv[data-category=events], .blocklyPath[fill='#FFBF00'].blocklyDropDownDiv[data-category=events] /*Commented out for now, as this causes some issues ,.blocklyDropDownDiv[data-category=null]*/{background:#c88330 !important;}");
     //Control
