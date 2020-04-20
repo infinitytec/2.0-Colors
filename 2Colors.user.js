@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         2.0 Colors
-// @version      1.2
-// @description  Adding 2.0 block colors to Scratch 3.0. Made by infinitytec in 2018. Under the MIT license.
+// @version      1.3.1
+// @description  Adding 2.0 block colors to Scratch 3.0. Made by infinitytec 2018-2020. Under the MIT license.
 // @author       You
 // @match        https://scratch.mit.edu/projects/*
 // @match        https://scratch.org/projects/*
+// @match        https://aero-a.github.io/scratch-gui/*
 // @grant        GM_addStyle
 // @updateURL    https://github.com/infinitytec/2.0-Colors/raw/master/2Colors.user.js
 // ==/UserScript==
@@ -53,4 +54,5 @@
     GM_addStyle(".removableTextInput, .blocklyWidgetDiv, .fieldTextInput {border-color: #ffffff66;");
     GM_addStyle(".valueReportBox{color: #bfbfbf;}");
     GM_addStyle(".blocklyWidgetDiv .fieldTextInput {border-color: #55555555;} g[data-shapes='argument round'] > .blocklyPath[stroke='#FF3355']{fill: white !important;}");
+    GM_addStyle("g[data-argument-type='dropdown'] path.blocklyBlockBackground, g[data-shapes='argument round'] > .blocklyPath.blocklyBlockBackground {stroke: #55555555;} ");
 })();
